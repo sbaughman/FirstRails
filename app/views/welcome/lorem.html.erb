@@ -1,4 +1,15 @@
-<h1>Here's your Ipsum</h1>
-<% @ipsum_paragraphs.each do |paragraph| %>
-  <p><%= paragraph %></p>
-<% end %>
+<main>
+  <h1>Here's your <span><%= params[:type].capitalize if params[:type] %> Ipsum</span></h1>
+  <% @ipsum_paragraphs.each do |paragraph| %>
+    <p><%= paragraph %></p>
+  <% end %>
+</main>
+<section>
+  <h3>Other <span>Lipsums</span></h3>
+  <ul>
+    <li><%= link_to "Standard", lorem_path(type: "standard") %></li>
+    <li><%= link_to "Samuel Jackson", lorem_path(type: "samuel") %></li>
+    <li><%= link_to "Futurama", lorem_path(type: "fillerama") %></li>
+    <li><%= link_to "Hipster", lorem_path(type: "hipster") %></li>
+  </ul>
+</section>

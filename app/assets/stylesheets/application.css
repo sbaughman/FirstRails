@@ -1,6 +1,7 @@
 html {
   margin: 0;
   padding: 0;
+  background-color: #eee;
 }
 
 body {
@@ -59,4 +60,54 @@ nav a:hover {
 main {
   width: 90%;
   margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+span {
+  color: rgba(57,255,20,1);
+}
+
+main img {
+  width: 100%;
+}
+
+main p {
+  color: #999;
+  line-height: 1.75;
+}
+
+section {
+  display: block;
+  background-color: #000;
+  width: 100%;
+  padding: 20px;
+}
+
+section h3 {
+  margin-top: 30px;
+  color: #fff;
+  display: inline;
+  margin-right: 50px;
+}
+
+section ul {
+  display: inline;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 50px;
+}
+
+section li {
+  display: inline-block;
+  padding-right: 30px;
+}
+
+section a {
+  color: #999;
+  text-decoration: none;
+}
+
+section a:hover {
+  color: #fff;
 }
