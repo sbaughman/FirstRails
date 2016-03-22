@@ -1,15 +1,62 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any styles
- * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
- * file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  height: 700px;
+  background: url(http://orig07.deviantart.net/eff7/f/2013/135/d/c/cat_with_space_glasses_by_frzhdzn-d65dw14.jpg) no-repeat center center fixed;
+  background-size: cover;
+  position: relative;
+}
+header div {
+  margin-top: -30px;
+  padding: 20px;
+}
+
+header h1 {
+  font-size: 60px;
+  color: rgba(57,255,20,0.9);
+}
+
+header h2 {
+  margin-top: -35px;
+  color: rgba(255,255,255,0.9);
+}
+
+nav {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0,0,0,0.5);
+  display: block;
+  width: 100%;
+}
+
+nav ul {
+  text-align: center;
+}
+
+nav li {
+  display: inline-block;
+  padding: 0 40px;
+}
+
+nav a {
+  color: rgba(255,255,255,0.9);
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: rgba(57,255,20,1);
+}
+
+main {
+  width: 90%;
+  margin: 0 auto;
+}
