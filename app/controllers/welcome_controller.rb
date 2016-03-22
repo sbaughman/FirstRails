@@ -4,6 +4,7 @@ class WelcomeController < ApplicationController
   end
 
   def show
+    @name = params[:name]
   end
 
   def lorem
