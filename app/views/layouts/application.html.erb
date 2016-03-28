@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>FirstRails</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+</head>
+<body>
+  <header>
+    <div class="headline">
+      <h1>First Rails App!</h1>
+      <h2>A Spacecats.com Production</h2>
+    </div>
+    <nav>
+      <ul>
+        <li><%= link_to "Welcome", root_path %></li>
+        <li><%= link_to "My Name is Billy", greeting_path(name: "billy") %></li>
+        <li><%= link_to "Lipsum Generator", lorem_path %></li>
+        <li><%= link_to "SpaceCats", "https://www.google.com/search?q=spacecats&espv=2&biw=990&bih=941&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjdzZG1htXLAhVIKGMKHUzxD1MQ_AUIBigB&dpr=1", :target => "blank" %></li>
+      </ul>
+    </nav>
+  </header>
+  <%= yield %>
+</body>
+</html>
